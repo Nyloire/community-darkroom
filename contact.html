@@ -1,0 +1,178 @@
+<html>
+	<head>
+
+		<meta name="viewport" content="initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+		<style>
+			body
+			{
+				margin: 0px;
+				font-family: 'Roboto', serif;
+				font-size: 20px;
+				background: rgb(230, 230, 230);
+			}
+
+			.main
+			{
+				max-width: 100%;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				grid-gap: 32px;
+				margin: 16px;
+				border-bottom: solid black 4px;
+			}
+
+			.title
+			{
+				grid-column: 1 / 5;
+				display: grid;
+				grid-template-columns: 25% 75%;
+				padding: 32px 0px 32px 0px;
+				font-size: 32px;
+				border-bottom: solid black 4px;
+			}
+
+			.titleimage
+			{
+				grid-column: 1 / 2;
+				width: 100%;
+			}
+
+			.titlenav
+			{
+				grid-column: 2 / 5;
+				padding-left: 32px;
+			}
+
+			.feature
+			{
+				grid-column: 1 / 5;
+				width: 100%;
+			}
+
+			.drental
+			{
+				grid-column: 1 / 5;
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 32px;
+				padding: 32px 0px 32px 0px;
+				border-top: solid black 2px;
+			}
+
+			.crental
+			{
+				grid-column: 1 / 5;
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 32px;
+				padding: 32px 0px 32px 0px;
+				border-top: solid black 2px;
+			}
+
+			.classes
+			{
+				grid-column: 1 / 5;
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				padding: 32px 0px 32px 0px;
+				border-top: solid black 2px;
+			}
+
+			.membership
+			{
+				grid-column: 1 / 5;
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				padding: 32px 0px 32px 0px;
+				border-top: solid black 2px;
+			}
+
+			.links
+			{
+				grid-area: 2 / 1 / 3 / 2;
+			}
+
+			.link
+			{
+				padding-left: 8px;
+				text-decoration:none;
+				color: #ff003e;
+				font-size:16px;
+				border-left: solid black 4px;
+			}
+
+			@media all and (min-width: 800px)
+			{
+				.main
+				{
+					margin: auto;
+					max-width: 1000px;
+				}
+
+				.titleimage
+				{
+					width: 75%;
+				}
+
+				.titlenav
+				{
+
+				}
+
+				.membership
+				{
+					grid-column: 1 / 2;
+					margin-right: 32px;
+				}
+
+				.drental
+				{
+					grid-column: 2 / 4;
+					margin-right: 32px;
+				}
+
+				.crental
+				{
+					grid-column: 4 / 5;
+				}
+
+				.classes
+				{
+					grid-column: 1 / 5;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class='main'>
+
+			<div class='title'>
+				<a href="index.html"><img class='titleimage' src='http://upstatedarkroom.com/ucdlogo.svg'></a>
+
+				<div class="titlenav">
+					<a href='index.html' class="link">Home</a>
+					<a href='info.html' class="link">Info</a>
+					<a href='contact.html' class="link">Contact</a>
+				</div>
+			</div>
+
+			<div style="grid-column: 1 / 5">
+
+				<p>Email: upstatedarkroom@gmail.com</p>
+				<p>Phone: 864-906-2954 Call or Text
+				<p>Address: 250 Mill St., PW3218, Taylors, SC 29687</p>
+
+				<a href="https://www.instagram.com/upstatedarkroom/?hl=en" style="text-decoration: none; color: #ff003e;">Instagram</a><br>
+				<a href="https://twitter.com/upstatedarkroom?lang=en" style="text-decoration: none; color: #ff003e;">Twitter</a><br>
+				<a href="https://www.facebook.com/upstatedarkroom/" style="text-decoration: none; color: #ff003e;">Facebook</a>
+
+				<br><br>
+			</div>
+
+		</div><br><br><br><br>
+	</body>
+</html>

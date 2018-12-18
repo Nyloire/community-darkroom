@@ -1,0 +1,206 @@
+<html>
+	<head>
+
+		<meta name="viewport" content="initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+		<style>
+			body
+			{
+				margin: 0px;
+				font-family: 'Roboto', serif;
+				font-size: 20px;
+				background: rgb(230, 230, 230);
+			}
+
+			.main
+			{
+				max-width: 100%;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				grid-gap: 32px;
+				margin: 16px;
+				border-bottom: solid black 4px;
+			}
+
+			.title
+			{
+				grid-column: 1 / 5;
+				display: grid;
+				grid-template-columns: 25% 75%;
+				padding: 32px 0px 32px 0px;
+				font-size: 32px;
+				border-bottom: solid black 4px;
+			}
+
+			.titleimage
+			{
+				grid-column: 1 / 2;
+				width: 100%;
+			}
+
+			.titlenav
+			{
+				grid-column: 2 / 5;
+				padding-left: 32px;
+			}
+
+			.feature
+			{
+				grid-column: 1 / 5;
+				width: 100%;
+			}
+
+			.drental
+			{
+				grid-column: 1 / 5;
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 32px;
+				padding: 32px 0px 32px 0px;
+				border-top: solid black 2px;
+			}
+
+			.crental
+			{
+				grid-column: 1 / 5;
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 32px;
+				padding: 32px 0px 32px 0px;
+				border-top: solid black 2px;
+			}
+
+			.classes
+			{
+				grid-column: 1 / 5;
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				padding: 32px 0px 32px 0px;
+				border-top: solid black 2px;
+			}
+
+			.membership
+			{
+				grid-column: 1 / 5;
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				padding: 32px 0px 32px 0px;
+				border-top: solid black 2px;
+			}
+
+			.links
+			{
+				grid-area: 2 / 1 / 3 / 2;
+			}
+
+			.link
+			{
+				padding-left: 8px;
+				text-decoration:none;
+				color: #ff003e;
+				font-size:16px;
+				border-left: solid black 4px;
+			}
+
+			@media all and (min-width: 800px)
+			{
+				.main
+				{
+					margin: auto;
+					max-width: 1000px;
+				}
+
+				.titleimage
+				{
+					width: 75%;
+				}
+
+				.titlenav
+				{
+
+				}
+
+				.membership
+				{
+					grid-column: 1 / 2;
+					margin-right: 32px;
+				}
+
+				.drental
+				{
+					grid-column: 2 / 4;
+					margin-right: 32px;
+				}
+
+				.crental
+				{
+					grid-column: 4 / 5;
+				}
+
+				.classes
+				{
+					grid-column: 1 / 5;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class='main'>
+
+			<div class='title'>
+				<a href="index.html"><img class='titleimage' src='http://upstatedarkroom.com/ucdlogo.svg'></a>
+
+				<div class="titlenav">
+					<a href='index.html' class="link">Home</a>
+					<a href='info.html' class="link">Info</a>
+					<a href='contact.html' class="link">Contact</a>
+				</div>
+			</div>
+
+			<div style="grid-column: 1 / 5;">
+				<p>
+					For $15 per hour you can use our loading room, develop your exposed film, use one of our 5 enlarging stations, and develop your prints in our 6' photographic sink. The darkroom has a supply of B&W film and paper chemistry (Ilfosol 3 / EcoPro / Multigrade), but currently you need to supply your own paper. A staff member / volunteer will be present to assist with anything you need.
+				</p>
+				<p>Our enlargers:</p>
+				<p style="font-size: 16px">
+					*Single 110mm Lens available for Super Chromega enlargers.<br><br>
+					- Super Chromega D Dichroic II (35mm Negative Carrier / 50mm Lens / *110mm Lens)<br>
+					- Super Chromega D Dichroic (35mm Negative Carrier / 50mm Lens / *110mm Lens)<br>
+					- Beseler Dichro 67S2 (35mm & 120 Negative carriers / 50mm Lens)<br>
+					- Beseler Dichro 67S2 (35mm & 120 Negative carriers / 50mm Lens)<br>
+					- Beseler 67CP (35mm & 120 Negative carriers / 50mm Lens)
+				</p>
+				<p style="color: #ff003e;">
+					The Upstate Darkroom is only equipped for B&W film / print processing. You may develop color film if you bring your own chemistry.
+				</p>
+				<p>
+					Availability is currently based on when staff / volunteers are able to be in the darkroom to supervise. In the near future we'll offer Membership that will allow 24/7 access.
+				</p>
+
+				<p>Please check our calendar before requesting a reservation:</p>
+
+				<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=cd36ttpiidt16u1rfikhb56ofs%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+				<p>
+					After making your reservation you'll receive an invoice payable online or in person, and a door code for entry into Taylors Mill.
+				</p>
+				<!--<div style="text-align: center;">
+					<a href='https://app.acuityscheduling.com/schedule.php?owner=15859698&appointmentType=6862550' style="text-decoration: none; color: #ff003e; font-size: 32px;">Sign Up</a><br><br>
+				</div>-->
+
+				<p>You can sign up by sending a scheduling request to <span style="color:#ff003e;">864-906-2954</span> or <span style="color:#ff003e;">upstatedarkroom@gmail.com</span> with the following details:</p>
+				<p>
+					- The date and time(s) you are reserving.<br>
+					- What services you would like to rent the darkroom for.<br>
+					- If developing film, will you be bringing your own chemicals?<br>
+					- If developing prints, which specific enlarger(s) you want to use, or any available enlarger.<br>
+				</p>
+				<p style="color:#ff003e;">Thanks for checking us out! We hope to see you soon.</p>
+			</div>
+
+		</div><br><br><br><br>
+	</body>
+</html>

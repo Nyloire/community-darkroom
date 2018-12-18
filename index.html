@@ -1,0 +1,264 @@
+<html>
+	<head>
+
+		<meta name="viewport" content="initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+		<style>
+			body
+			{
+				margin: 0px;
+				font-family: 'Roboto', serif;
+				font-size: 20px;
+				background: rgb(230, 230, 230);
+			}
+
+			.main
+			{
+				max-width: 100%;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				grid-gap: 32px;
+				margin: 16px;
+				border-bottom: solid black 4px;
+			}
+
+			.title
+			{
+				grid-column: 1 / 5;
+				display: grid;
+				grid-template-columns: 25% 75%;
+				padding: 32px 0px 32px 0px;
+				font-size: 32px;
+				border-bottom: solid black 4px;
+			}
+
+			.titleimage
+			{
+				grid-column: 1 / 2;
+				width: 100%;
+			}
+
+			.titlenav
+			{
+				grid-column: 2 / 5;
+				padding-left: 32px;
+			}
+
+			.feature
+			{
+				grid-column: 1 / 5;
+			}
+
+			.featureimage
+			{
+				width: 100%;
+			}
+
+			.drental
+			{
+				grid-column: 1 / 5;
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 32px;
+				padding: 32px 0px 32px 0px;
+				border-top: solid black 2px;
+			}
+
+			.crental
+			{
+				grid-column: 1 / 5;
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 32px;
+				padding: 32px 0px 32px 0px;
+				border-top: solid black 2px;
+			}
+
+			.classes
+			{
+				grid-column: 1 / 5;
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				padding: 32px 0px 32px 0px;
+				border-top: solid black 2px;
+			}
+
+			.membership
+			{
+				grid-column: 1 / 5;
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				padding: 32px 0px 32px 0px;
+				border-top: solid black 2px;
+			}
+
+			.links
+			{
+				grid-area: 2 / 1 / 3 / 2;
+			}
+
+			.link
+			{
+				padding-left: 8px;
+				text-decoration:none;
+				color: #ff003e;
+				font-size:16px;
+				border-left: solid black 4px;
+			}
+
+			@media all and (min-width: 800px)
+			{
+				.main
+				{
+					margin: auto;
+					max-width: 1000px;
+				}
+
+				.titleimage
+				{
+					width: 75%;
+				}
+
+				.titlenav
+				{
+
+				}
+
+				.feature
+				{
+					
+				}
+
+				.featureimage
+				{
+					display:block;
+					grid-column: 1 / 5;
+					width: auto;
+					max-height: 600px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				.membership
+				{
+					grid-column: 1 / 2;
+					margin-right: 32px;
+				}
+
+				.drental
+				{
+					grid-column: 2 / 3;
+					margin-right: 32px;
+				}
+
+				.crental
+				{
+					grid-column: 3 / 4;
+				}
+
+				.classes
+				{
+					grid-column: 4 / 5;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class='main'>
+
+			<div class='title'>
+				<a href="index.html"><img class='titleimage' src='http://upstatedarkroom.com/ucdlogo.svg'></a>
+
+				<div class="titlenav">
+					<a href='index.html' class="link">Home</a>
+					<a href='info.html' class="link">Info</a>
+					<a href='contact.html' class="link">Contact</a>
+				</div>
+
+				<div style="grid-column: 1 / 4">
+				<!-- Begin MailChimp Signup Form -->
+				<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+				<style type="text/css">
+					#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+					/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+					   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+				</style>
+				<div id="mc_embed_signup">
+				<form action="https://upstatedarkroom.us16.list-manage.com/subscribe/post?u=d6150aeaef684f71b9898749c&amp;id=d26e142770" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				    <div id="mc_embed_signup_scroll">
+					<label for="mce-EMAIL">Subscribe to our mailing list</label>
+					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d6150aeaef684f71b9898749c_d26e142770" tabindex="-1" value=""></div>
+				    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="-webkit-appearance: none;"></div>
+				    </div>
+				</form>
+				</div>
+
+				<!--End mc_embed_signup-->
+				</div>
+			</div>
+
+			<div class="feature">
+				Artist: <a id="feature_name" href="" style="text-decoration: none; color: #ff003e;"></a><br><br>
+				<img id="feature_image" src="" class="featureimage"><br><br>
+			</div>
+
+			<script>
+				var e_featurename = document.getElementById("feature_name");
+				var e_featureimage = document.getElementById("feature_image");
+
+				var artists = []
+				artists.push({name: "Kaemura Neviure", url: "https://www.instagram.com/kaemuraneviure/?hl=en", image:"KaemuraNeviure_0"});
+				artists.push({name: "Kaemura Neviure", url: "https://www.instagram.com/kaemuraneviure/?hl=en", image:"KaemuraNeviure_1"});
+				artists.push({name: "Nyloire", url: "https://www.instagram.com/nyloire/?hl=en", image:"Nyloire_0"});
+				artists.push({name: "Nyloire", url: "https://www.instagram.com/nyloire/?hl=en", image:"Nyloire_1"});
+				artists.push({name: "Nyloire", url: "https://www.instagram.com/nyloire/?hl=en", image:"Nyloire_2"});
+				artists.push({name: "James Pittman", url: "https://www.instagram.com/the_jpg/?hl=en", image:"JamesPittman_0"});
+
+				var artistindex = Math.floor(Math.random()*artists.length);
+
+				e_featurename.innerHTML = artists[artistindex].name;
+				e_featurename.href = artists[artistindex].url;
+				e_featureimage.src = "artist-feature/" + artists[artistindex].image + ".jpg";
+			</script>
+
+			<div class='membership'>
+				<div style="grid-area:1 / 1 / 2 / 2;"><div style="display:inline-block; border-bottom:solid black 4px">Membership</div></div><br><br>
+				<div class="links">
+					<!--<a href='' class="link">Sign Up</a>&nbsp&nbsp&nbsp
+					<a href='' class="link">Info</a>-->
+					<span class="link">Coming Soon</span>
+				</div>
+			</div>
+
+			<div class='drental'>
+				<div><div style="display:inline-block; border-bottom:solid black 4px">Darkroom<br>Rental</div></div><br><br>
+				<div class="links">
+					<!--<a href='https://app.acuityscheduling.com/schedule.php?owner=15859698&appointmentType=6862550' class="link">Sign Up</a>-->
+					<a href='darkroomrental.html' class="link">Sign Up</a>
+				</div>
+			</div>
+
+			<div class='crental'>
+				<div style="grid-area:1 / 1 / 2 / 2;"><div style="display:inline-block; border-bottom:solid black 4px">Camera<br>Rental</div></div><br><br>
+				<div class="links">
+					<!--<a href='' class="link">Sign Up</a>&nbsp&nbsp&nbsp
+					<a href='' class="link">Info</a>-->
+					<span class="link">Coming Soon</span>
+				</div>
+			</div>
+
+			<div class='classes'>
+				<div style="grid-area:1 / 1 / 2 / 2;"><div style="display:inline-block; border-bottom:solid black 4px">Classes</div></div><br><br>
+				<div class="links">
+					<a href='classes.html' class="link">Sign Up</a>
+				</div>
+			</div>
+
+		</div><br><br><br><br>
+	</body>
+</html>
